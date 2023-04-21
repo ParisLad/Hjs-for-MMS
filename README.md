@@ -2,9 +2,7 @@ library(BSgenome.Hsapiens.UCSC.hg19.masked)
 genome <- BSgenome.Hsapiens.UCSC.hg19.masked
 seqnames <- seqnames(genome)
 hjtable <- read.table("C:\\Work\\GeneScreening\\hj.txt", header = TRUE)
-# Kostas comment: insert hj.txt path here
-
-for (i in 1:nrow(hjtable)) # Kostas comment insert for start end for hj
+for (i in 1:nrow(hjtable)) 
 {
 
         for (seqname in seqnames)
